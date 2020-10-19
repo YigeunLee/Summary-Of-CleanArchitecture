@@ -24,16 +24,16 @@ Summary Of CleanArchitecture
     <pre>
     <code>
        class Employee{
-            public void CalculatePay(){ // 회계팀에서 기능을 정의하고 사용한다
-                RegularHours();
-            }
-            public void ReportHours(){ // 인사팀에서 기능을 정의하고 사용한다
-                RegularHours();
-            }
-            private void RegularHours(){
-                // 업무시간을 계산한다
-            }
+        public void CalculatePay(){ // 회계팀에서 기능을 정의하고 사용한다
+          RegularHours();
         }
+        public void ReportHours(){ // 인사팀에서 기능을 정의하고 사용한다
+          RegularHours();
+        }
+        private void RegularHours(){
+          // 업무시간을 계산한다
+        }
+    }
     </code>
     </pre>
     > 위 Employee 클래스는 회계팀이라는 액터와 인사팀이라는 액터를 책임지기 때문에 SRP를 위배한다
