@@ -7,7 +7,7 @@ Summary Of CleanArchitecture
   2. 이해하기 쉬울 것
   3. 많은 소프트웨어 시스템에 사용될 수 있는 컴포넌트 기반이 되는 것
   
-## SOLID의 원칙 요소:
+## SOLID의 원칙 요소
   1. SRP: 단일 책임 원칙
     각 소프트웨어 모듈은 변경의 이유가 하나이어야 한다, 하나의 모듈은 하나의 액터만을 책임져야 한다
   2. OCP: 개방-폐쇄 원칙
@@ -19,9 +19,10 @@ Summary Of CleanArchitecture
   5. DIP: 의존성 역전 원칙
     고수준 정책을 구현하는 코드는 저수준 세부사항을 구현하는 코드에 절대로 의존해서는 안 된다. 세부사항이 정책에 의존해야 한다
   
-## SRP에 대하여:
+## SRP에 대하여
   1. 다음과 같은 상황이 존재한다고 가정하자
-    ```
+    <pre>
+    <code>
     class Employee{
       public void CalculatePay(){ // 회계팀에서 기능을 정의하고 사용한다
         RegularHours();
@@ -33,7 +34,8 @@ Summary Of CleanArchitecture
           // 업무시간을 계산한다
       }
     }
-    ```
+    </code>
+    </pre>
     위 Employee 클래스는 회계팀이라는 액터와 인사팀이라는 액터를 책임지기 때문에 SRP를 위배한다
     회계팀과 인사팀의 업무시간 계산방법이 다르므로 잘못된 결과를 출력할 수 있다
     해결방안은 다음과 같다
