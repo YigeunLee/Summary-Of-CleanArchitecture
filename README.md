@@ -1,5 +1,5 @@
 # Summary-Of-CleanArchitecture
-Summary Of CleanArchitecture
+클린아키텍쳐 서적을 요약하는 것을 목표로 한다
 
 ## 용어 정리
 -SOLID:중간 수준의 소프트웨어 구조가 아래와 같도록 만드는 데 있음
@@ -38,9 +38,9 @@ Summary Of CleanArchitecture
    회계팀과 인사팀의 업무시간 계산방법이 다르므로 잘못된 결과를 출력할 수 있다
    해결방안은 다음과 같다
 ~~~css
-      class Facade{
-        PayCalculator paycalculator;
-        HourReporter hourReporter;
+      class Facade{ // Facade 패턴 사용
+        PayCalculator paycalculator; // 지출수행 객체
+        HourReporter hourReporter; // 업무시간 보고 - 인사팀
         EmployeeSaver employeeSaver;
           
           public void calculatePay(){
@@ -48,6 +48,6 @@ Summary Of CleanArchitecture
           }
        }
 ~~~
-     각 액터별 책임을 지는 객체를 생성하고 기능을 위임한다.
-     ## 작성 중...2020-10-19
+   각 액터별 책임을 지는 객체를 생성하고 기능을 위임한다.
+   ## 작성 중...2020-10-19
     
