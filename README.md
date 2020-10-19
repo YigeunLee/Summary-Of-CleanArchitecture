@@ -21,6 +21,7 @@ Summary Of CleanArchitecture
   
 -SRP에 대하여:
   1. 다음과 같은 상황이 존재한다고 가정하자
+    >
       class Employee{
           public void CalculatePay(){ // 회계팀에서 기능을 정의하고 사용한다
               RegularHours();
