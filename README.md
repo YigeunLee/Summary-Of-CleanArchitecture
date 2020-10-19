@@ -49,12 +49,9 @@ Summary Of CleanArchitecture
           public void calculatePay(){
               paycalculator.calculatePay();
           }
-          // 생략 //
-      }
-      </code>
-      </pre>
-      > 각 액터별 책임을 지는 객체를 생성하고 기능을 위임한다.
-      
-      
-      작성 중...2020-10-19
+       }
+     </code>
+     </pre>
+     각 액터별 책임을 지는 객체를 생성하고 기능을 위임한다.
+     ## 작성 중...2020-10-19
     
