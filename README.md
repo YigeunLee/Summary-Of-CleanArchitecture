@@ -34,9 +34,9 @@ Summary Of CleanArchitecture
       }
     }
 ~~~
-    위 Employee 클래스는 회계팀이라는 액터와 인사팀이라는 액터를 책임지기 때문에 SRP를 위배한다
-    회계팀과 인사팀의 업무시간 계산방법이 다르므로 잘못된 결과를 출력할 수 있다
-    해결방안은 다음과 같다
+   위 Employee 클래스는 회계팀이라는 액터와 인사팀이라는 액터를 책임지기 때문에 SRP를 위배한다
+   회계팀과 인사팀의 업무시간 계산방법이 다르므로 잘못된 결과를 출력할 수 있다
+   해결방안은 다음과 같다
 ~~~css
       class Facade{
         PayCalculator paycalculator;
